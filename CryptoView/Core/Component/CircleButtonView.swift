@@ -26,7 +26,7 @@ struct CircleButtonView: View {
 
 #Preview {
     Group{
-        CircleButtonView(iconName: Constants.backIcon)
+        CircleButtonView(iconName: Constants.leftArrowIcon)
         
     }    .previewLayout(.sizeThatFits)
  

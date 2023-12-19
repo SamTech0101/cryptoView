@@ -14,6 +14,7 @@
 		FEA8B6922B31EEA30099FBEE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B6912B31EEA30099FBEE /* Constants.swift */; };
 		FEDEC5DD2B3249CE00E2FBB1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEC5DC2B3249CE00E2FBB1 /* HomeView.swift */; };
 		FEDEC5DF2B3250DC00E2FBB1 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEC5DE2B3250DC00E2FBB1 /* CircleButtonView.swift */; };
+		FEDEC5E12B325CBC00E2FBB1 /* CircleButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEC5E02B325CBC00E2FBB1 /* CircleButtonAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FEA8B6912B31EEA30099FBEE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FEDEC5DC2B3249CE00E2FBB1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FEDEC5DE2B3250DC00E2FBB1 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		FEDEC5E02B325CBC00E2FBB1 /* CircleButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				FEDEC5DE2B3250DC00E2FBB1 /* CircleButtonView.swift */,
+				FEDEC5E02B325CBC00E2FBB1 /* CircleButtonAnimation.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				FEA8B67D2B31E80B0099FBEE /* CryptoViewApp.swift in Sources */,
 				FEDEC5DD2B3249CE00E2FBB1 /* HomeView.swift in Sources */,
 				FEDEC5DF2B3250DC00E2FBB1 /* CircleButtonView.swift in Sources */,
+				FEDEC5E12B325CBC00E2FBB1 /* CircleButtonAnimation.swift in Sources */,
 				FEA8B6922B31EEA30099FBEE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

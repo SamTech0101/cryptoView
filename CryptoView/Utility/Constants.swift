@@ -18,7 +18,13 @@ static let secondaryText = "SecondaryTextColor"
     //Icons
     static let plusIcon = "plus"
     static let infoIcon = "info"
-    static let backIcon = "chevron.right"
+    static let rightArrowIcon = "chevron.right"
+    static let leftArrowIcon = "chevron.left"
+    
+    //String
+
+    static let portfolioTitle = "Portfolio"
+    static let LivePricesTitle = "Live Prices"
 
 
 }
