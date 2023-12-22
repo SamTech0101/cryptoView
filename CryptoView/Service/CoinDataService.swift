@@ -14,6 +14,9 @@ class CoinDataService : CoinDataServiceProtocol {
     @Published var allCoins : [CoinModel] = []
     var coinSubscriptions: AnyCancellable?
     
+    init() {
+        fetchCoins()
+    }
     
     func fetchCoins() {
         guard let url = URL(string: Constants.fetchCoinsURL) else { return}
