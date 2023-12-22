@@ -9,12 +9,24 @@ import SwiftUI
 
 struct HomeView: View {
     @State private  var  showPortfolio : Bool = false
+    @EnvironmentObject  private var homeVm : HomeViewModel
     var body: some View {
         ZStack{
             Color.theme.background
                 .ignoresSafeArea()
             VStack{
                 homeHeader
+                
+                subHeader
+                if showPortfolio{
+                    portfolioCoins
+                        .transition(.move(edge: .leading))
+                }else{
+                    allCoins
+                        .transition(.move(edge: .trailing))
+                }
+                
+               
                 Spacer(minLength: 0)
             }
             
@@ -28,10 +40,11 @@ struct HomeView: View {
             .toolbar(Visibility.hidden)
 
     }
+    .environmentObject(DeveloperPreview.instance.homeVm)
 
 }
 extension HomeView{
-    var homeHeader : some View {
+   private var homeHeader : some View {
         return HStack{
             CircleButtonView(iconName: showPortfolio ? Constants.plusIcon : Constants.infoIcon)
                 .animation(.none,value: showPortfolio)
@@ -54,5 +67,40 @@ extension HomeView{
                 }
                 
         }.padding(.horizontal)
+    }
+    private var allCoins : some View {
+        List{
+            ForEach(homeVm.allCoins){coin in
+                CoinRowView(coin: coin, showHoldignColumn: showPortfolio)
+                    .listRowInsets(.init(top: Constants.padding10, leading: 0, bottom: Constants.padding10, trailing: 10))
+                
+            }
+        }.listStyle(.plain)
+        
+    }
+    private var portfolioCoins : some View {
+        List{
+            ForEach(homeVm.portfolioCoins){coin in
+                CoinRowView(coin: coin, showHoldignColumn: showPortfolio)
+                    .listRowInsets(.init(top: Constants.padding10, leading: 0, bottom: Constants.padding10, trailing: 10))
+                
+            }
+        }.listStyle(.plain)
+        
+    }
+    
+    private var subHeader : some View {
+        HStack{
+            Text(Constants.coinTitle)
+            Spacer()
+            if showPortfolio{
+                Text(Constants.holdingTitle)
+            }
+            
+            Text(Constants.priceTitle)
+                .frame(width: UIScreen.main.bounds.size.width/3.5,alignment: .trailing)
+        }.font(.caption)
+            .foregroundStyle(Color.theme.secondaryText)
+            .padding(.horizontal)
     }
 }

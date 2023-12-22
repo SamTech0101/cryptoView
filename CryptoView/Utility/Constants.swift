@@ -25,10 +25,14 @@ static let secondaryText = "SecondaryTextColor"
 
     static let portfolioTitle = "Portfolio"
     static let LivePricesTitle = "Live Prices"
+    static let coinTitle = "Coins"
+    static let holdingTitle = "Holdings"
+    static let priceTitle = "Price"
     
     // CGFloat
     static let padding4:CGFloat = 4
     static let padding8:CGFloat = 8
+    static let padding10:CGFloat = 10
     static let padding12:CGFloat = 12
     static let padding14:CGFloat = 14
     
