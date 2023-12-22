@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FE7CB3C62B35C5A7007115BE /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CB3C52B35C5A7007115BE /* Double.swift */; };
 		FE7CB3C82B35C63B007115BE /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CB3C72B35C63B007115BE /* PreviewProvider.swift */; };
+		FE7CB3CA2B35D808007115BE /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CB3C92B35D808007115BE /* CoinRowView.swift */; };
 		FEA8B67D2B31E80B0099FBEE /* CryptoViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA8B67C2B31E80B0099FBEE /* CryptoViewApp.swift */; };
 		FEA8B6852B31E80C0099FBEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA8B6842B31E80C0099FBEE /* Preview Assets.xcassets */; };
 		FEA8B68C2B31E9070099FBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA8B68B2B31E9070099FBEE /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		FE7CB3C52B35C5A7007115BE /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		FE7CB3C72B35C63B007115BE /* PreviewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		FE7CB3C92B35D808007115BE /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		FEA8B6792B31E80B0099FBEE /* CryptoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA8B67C2B31E80B0099FBEE /* CryptoViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewApp.swift; sourceTree = "<group>"; };
 		FEA8B6822B31E80C0099FBEE /* CryptoView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CryptoView.entitlements; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				FEDEC5DC2B3249CE00E2FBB1 /* HomeView.swift */,
+				FE7CB3C92B35D808007115BE /* CoinRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			files = (
 				FEA8B68F2B31EE160099FBEE /* Colors.swift in Sources */,
 				FEA8B67D2B31E80B0099FBEE /* CryptoViewApp.swift in Sources */,
+				FE7CB3CA2B35D808007115BE /* CoinRowView.swift in Sources */,
 				FE7CB3C62B35C5A7007115BE /* Double.swift in Sources */,
 				FEDEC5DD2B3249CE00E2FBB1 /* HomeView.swift in Sources */,
 				FEDEC5DF2B3250DC00E2FBB1 /* CircleButtonView.swift in Sources */,
@@ -374,9 +378,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -412,9 +415,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
