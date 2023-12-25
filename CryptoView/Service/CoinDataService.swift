@@ -12,7 +12,7 @@ protocol CoinDataServiceProtocol{
 }
 class CoinDataService : CoinDataServiceProtocol {
     @Published var allCoins : [CoinModel] = []
-    var coinSubscriptions: AnyCancellable?
+   private var coinSubscriptions: AnyCancellable?
     
     init() {
         fetchCoins()
@@ -20,27 +20,9 @@ class CoinDataService : CoinDataServiceProtocol {
     
     func fetchCoins() {
         guard let url = URL(string: Constants.fetchCoinsURL) else { return}
-       coinSubscriptions = URLSession.shared.dataTaskPublisher(for: url)
-            .subscribe(on: DispatchQueue.global(qos: .default))
-            .tryMap{ output -> Data in
-                guard let response = output.response as? HTTPURLResponse,
-                      response.statusCode >= 200 && response.statusCode < 300
-                else {
-                    throw URLError(.badServerResponse)
-                }
-                return output.data
-                
-            }
+        coinSubscriptions = NetworkManager.fetchData(url: url)
             .decode(type: [CoinModel].self, decoder: JSONDecoder())
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: {(completion) in
-                  switch completion {
-            
-                  case .finished:
-                      break
-                  case .failure(let error):
-                      debugPrint("CoinDataService --> fetchCoins --> \(error.localizedDescription)")
-                  }}
+            .sink(receiveCompletion: NetworkManager.handleCompletion
                   , receiveValue: { [weak self] coins in
                 self?.allCoins.append(contentsOf: coins)
                 self?.coinSubscriptions?.cancel()

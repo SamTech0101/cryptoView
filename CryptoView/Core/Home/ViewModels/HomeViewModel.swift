@@ -19,6 +19,7 @@ class HomeViewModel : ObservableObject,CoinDataServiceProtocol{
     }
     
     func fetchCoins() {
+    
         coinDataService.$allCoins.sink{[weak self]
             coins in
             self?.allCoins = coins
