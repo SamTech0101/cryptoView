@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct CoinImageView: View {
-    @StateObject private var coinImageVm : CoinImageViewModel = CoinImageViewModel()
+    @StateObject private var coinImageVm : CoinImageViewModel
+    init(coinModel : CoinModel) {
+        _coinImageVm = StateObject(wrappedValue: CoinImageViewModel(coinModel: coinModel))
+    }
+    
     var body: some View {
         if let image = coinImageVm.coinImage {
             Image(uiImage: image)
+                .resizable()
+                .scaledToFit()
         }else if coinImageVm.isLoading{
             ProgressView()
         }else{
@@ -22,5 +28,5 @@ struct CoinImageView: View {
 }
 
 #Preview {
-    CoinImageView()
+    CoinImageView(coinModel: DeveloperPreview.instance.coin)
 }

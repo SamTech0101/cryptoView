@@ -10,13 +10,14 @@ import UIKit
 class CoinImageDataService{
     @Published var image : UIImage?
     private var subcribtion : AnyCancellable?
-    var coinModel : CoinModel
+    private var coinModel : CoinModel
     init(coinModel : CoinModel) {
         self.coinModel = coinModel
+        fetchImage()
     }
     
     
-    private func futchImage(){
+    private func fetchImage(){
         guard let url = URL(string: coinModel.image) else {return}
         subcribtion = NetworkManager.fetchData(url: url)
             .tryMap({data -> UIImage? in
