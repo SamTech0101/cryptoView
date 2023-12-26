@@ -16,7 +16,7 @@ class CoinImageDataService{
     }
     
     
-    func futchImage(){
+    private func futchImage(){
         guard let url = URL(string: coinModel.image) else {return}
         subcribtion = NetworkManager.fetchData(url: url)
             .tryMap({data -> UIImage? in

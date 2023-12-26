@@ -20,6 +20,7 @@ static let secondaryText = "SecondaryTextColor"
     static let infoIcon = "info"
     static let rightArrowIcon = "chevron.right"
     static let leftArrowIcon = "chevron.left"
+    static let questionMarkIcon = "questionmark"
     
     //String
 

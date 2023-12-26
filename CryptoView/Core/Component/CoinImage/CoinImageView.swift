@@ -15,7 +15,7 @@ struct CoinImageView: View {
         }else if coinImageVm.isLoading{
             ProgressView()
         }else{
-           Image(systemName: "questionmark")
+            Image(systemName: Constants.questionMarkIcon)
         }
         
     }
