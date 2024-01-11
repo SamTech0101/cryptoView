@@ -29,6 +29,7 @@ static let secondaryText = "SecondaryTextColor"
     static let coinTitle = "Coins"
     static let holdingTitle = "Holdings"
     static let priceTitle = "Price"
+    static let folderName = "coin_images"
     
     // CGFloat
     static let padding4:CGFloat = 4

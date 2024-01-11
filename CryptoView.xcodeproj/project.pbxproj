@@ -25,6 +25,7 @@
 		FEDEC5DF2B3250DC00E2FBB1 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEC5DE2B3250DC00E2FBB1 /* CircleButtonView.swift */; };
 		FEDEC5E12B325CBC00E2FBB1 /* CircleButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEC5E02B325CBC00E2FBB1 /* CircleButtonAnimation.swift */; };
 		FEF7A68A2B3364EB0001AEB0 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF7A6892B3364EB0001AEB0 /* CoinModel.swift */; };
+		FEFAE3402B40AE1300BC0D24 /* LocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFAE33F2B40AE1300BC0D24 /* LocalManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FEDEC5DE2B3250DC00E2FBB1 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		FEDEC5E02B325CBC00E2FBB1 /* CircleButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimation.swift; sourceTree = "<group>"; };
 		FEF7A6892B3364EB0001AEB0 /* CoinModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		FEFAE33F2B40AE1300BC0D24 /* LocalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				FEA8B6912B31EEA30099FBEE /* Constants.swift */,
 				FEA8B68D2B31EDFB0099FBEE /* Extensions */,
 				FECDC9652B39AE9C0071636F /* NetworkManager.swift */,
+				FEFAE33F2B40AE1300BC0D24 /* LocalManager.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				FEC6D2082B3B5549004014FE /* CoinViewModel.swift in Sources */,
 				FE7CB3CF2B364D9D007115BE /* CoinDataService.swift in Sources */,
 				FEA8B68F2B31EE160099FBEE /* Colors.swift in Sources */,
+				FEFAE3402B40AE1300BC0D24 /* LocalManager.swift in Sources */,
 				FE7CB3CC2B362778007115BE /* HomeViewModel.swift in Sources */,
 				FECDC9662B39AE9C0071636F /* NetworkManager.swift in Sources */,
 				FEA8B67D2B31E80B0099FBEE /* CryptoViewApp.swift in Sources */,
